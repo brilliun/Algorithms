@@ -1,4 +1,4 @@
-from Algorithms.utils.python import utils;
+import utils
 
 def sort(input):
     input_len = len(input)
@@ -6,7 +6,6 @@ def sort(input):
         min_index = __find_min(input, i, input_len)
         utils.swap(input, i, min_index)
 
-    print(input)
 
 def __find_min(input, start, end):
     min_val = float('inf')
@@ -19,13 +18,3 @@ def __find_min(input, start, end):
 
     return min_index
 
-
-
-
-def __swap(list, a, b):
-    temp = list[a]
-    list[a] = list[b]
-    list[b] = temp
-
-
-sort([2, 3, 1, 4, 5, 3])
