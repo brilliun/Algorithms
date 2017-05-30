@@ -46,12 +46,16 @@ def run():
     for test in test_cases:
         origin = test[:]
         sorted_origin = sorted(origin)
-        algorithm.sort(test)
+        step_records = algorithm.sort(test)
         if not __array_equal(test, sorted_origin):
             print('Sort failed!')
             print('Origin: {0}'.format(origin))
             print('Sorted: {0}'.format(sorted_origin))
             print('Result: {0}'.format(test))
+            if step_records:
+                print('Step records:')
+                print('\n'.join(step_records))
+            break
 
 
 run()

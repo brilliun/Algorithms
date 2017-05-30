@@ -1,5 +1,7 @@
 import math
 
+# A top-down recursive implementation
+
 def sort(input):
     copy = input[:]
     __sort(copy, input, 0, len(input))
