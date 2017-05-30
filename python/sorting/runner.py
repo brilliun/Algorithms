@@ -49,9 +49,9 @@ def run():
         algorithm.sort(test)
         if not __array_equal(test, sorted_origin):
             print('Sort failed!')
-        print('Origin: {0}'.format(origin))
-        print('Sorted: {0}'.format(sorted_origin))
-        print('Result: {0}'.format(test))
+            print('Origin: {0}'.format(origin))
+            print('Sorted: {0}'.format(sorted_origin))
+            print('Result: {0}'.format(test))
 
 
 run()
